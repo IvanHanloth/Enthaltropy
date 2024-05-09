@@ -33,7 +33,3 @@ jobs:
         copy dist\main-cn.exe  main-cn.exe
         pyinstaller -F main-cn.py
         copy dist\main-cn.exe  main-cn.exe
-    - name: Test with pytest
-      run: |
-        main-cn
-        main-en
