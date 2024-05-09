@@ -33,7 +33,3 @@ jobs:
         copy dist\main-cn.exe  main-cn.exe
         pyinstaller -F main-cn.py
         copy dist\main-cn.exe  main-cn.exe      
-    - name: Publish package
-      uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        password: ${{ secrets.PYPI_API_TOKEN }}
